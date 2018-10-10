@@ -49,7 +49,7 @@ function! s:MatchAddress(string)
                 \.' | sort')
 endfunction
 
-function! EmailComplete(findstart, base)
+function! email#EmailComplete(findstart, base)
     if a:findstart
 	    " locate the start of the word
 	    let line = getline('.')
