@@ -45,8 +45,7 @@ endfunction
 " Function to match a string to an email address
 function! s:MatchAddress(string)
 
-    return systemlist('cat '.s:addresses.' | grep -i "'.escape(a:string,'\\').'"'
-                \.' | sort')
+    return systemlist('cat '.s:addresses.' | grep -i "'.escape(a:string,'\\').'"')
 endfunction
 
 function! email#EmailComplete(findstart, base)
